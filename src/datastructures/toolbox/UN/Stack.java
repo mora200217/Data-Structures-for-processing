@@ -30,11 +30,24 @@ public Stack(int N) {
     arr =(T[]) new Object[N];
   }
   /**
-   *  saca un elemento.
+   *  Retorna el objeto que está en top.
    *  Maneja Excepción de espacio.
    *  @param {}.
    *  @return{Type} - Éxito del proceso. 
    **/
+  
+  public T peek(){
+  	if (empty()){
+  		throw new RuntimeException("La pila está vacía");
+  	}
+  	return arr[numInside]
+  }
+  /**
+   *  saca un elemento.
+   *  Maneja Excepción de espacio.
+   *  @param {}.
+   *  @return{Type} - Éxito del proceso. 
+   **/  
   public T pop() {
     if (empty()) {
       throw new RuntimeException("la pila esta vacia");
