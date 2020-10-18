@@ -7,6 +7,7 @@ package datastructures.toolbox.UN;
  *  por referencias. Consta de dos Nodos principales: 
  *      - { Node } front: referencia al nodo cabeza de la lista (primero)
  *      - { Node } rear: referencia al nodo cola de la lista (último)
+ *
  */
 
 public class LinkedList<T> {
